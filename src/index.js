@@ -6,7 +6,7 @@ import { fetch } from './ducks/forecast';
 import Weather from './components/weather';
 import createStore from './store';
 
-const CITY = 'Glasgow';
+const CITY = 'Perth';
 
 const store = createStore()
     , root = document.getElementById('root');
