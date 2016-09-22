@@ -19,19 +19,16 @@ JMaCG---------------------------------------------------------------------------
 Under the Github location, buildit/acceptance-testing, I accessed the README and provided the following responses for the request to rewrite the features into BDD, which are offered in the ‘As A,..I Want,…So That’ format, they are broken down into Epics, Themes and User Stories:
 
 Epics		
-As A	I Want	So That
-User	To know about the weather	I can plan and prepare
+As A User; I Want To Know About the Weather; So That I can plan and prepare
 		
 		
 Themes		
-As A	I Want	So That
-User	To know the local weather forecast	I can plan my day
-User 	To know the current environmental conditions	I can respond and prepare
+As A User; I Want To know the local weather forecast; So That I can plan my day
+As A User; I Want To know the current environmental conditions; So That	I can respond and prepare
 		
 Stories		
-As A	I Want	So That
-User	by entering a city name	I can get the 5 day forecast
-User	by selecting today	I can get the a 3 hourly forecast if absent, and hidden if present, which will consist of {dominant condition, windspeed and direction, cumulative rainfall, min and max temperatures}
+As A User; I Want by entering a city name; So That I can get the 5 day forecast
+As a User; I want by selecting today; So that I can get the a 3 hourly forecast if absent, and hidden if present, which will consist of {dominant condition, windspeed and direction, cumulative rainfall, min and max temperatures}
 
 
 JMacG------------------------------------------------------------------------------------------------------------------------------------
