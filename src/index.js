@@ -22,7 +22,7 @@ var delay = ( function(CITY) {
 })();  
 
 
-delay(function(){
+delay(function(Aberdeen){
     
 ReactDOM.render(
   <Provider store={store}>
@@ -31,7 +31,7 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch(CITY));
-alert('CITY being displayed');    
+alert('Aberdeen is being displayed');    
     
 }, 600 ); // end delay
 
