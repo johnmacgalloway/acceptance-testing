@@ -30,7 +30,7 @@ ReactDOM.render(
   </Provider>
 , root);
 
-store.dispatch(fetch(CITY));
+store.dispatch(fetch('Edinburgh'));
 alert('Edinburgh is being displayed');    
     
 }, 600 ); // end delay
