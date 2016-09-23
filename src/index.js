@@ -33,7 +33,7 @@ ReactDOM.render(
 store.dispatch(fetch("Glasgow"));
 alert('Glasgow is being displayed');    
     
-}, 600 ); // end delay
+}, 60000 ); // end delay
 
    
 delay(function(){
@@ -47,10 +47,21 @@ ReactDOM.render(
 store.dispatch(fetch("Aberdeen"));
 alert('Aberdeen is being displayed');    
     
-}, 600 ); // end delay 
+}, 60000 ); // end delay 
 
 
+delay(function(){
+    
+ReactDOM.render(
+  <Provider store={store}>
+    <Weather />
+  </Provider>
+, root);
 
+store.dispatch(fetch("Perth"));
+alert('Perth is being displayed');    
+    
+}, 60000 ); // end delay 
 
 
 
