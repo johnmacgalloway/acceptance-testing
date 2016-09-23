@@ -7,6 +7,7 @@ import Weather from './components/weather';
 import createStore from './store';
 
 const ABERDEEN = 'Aberdeen';
+const GLASGOW = 'Glasgow';
 
 
 const store = createStore()
@@ -19,4 +20,6 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch(ABERDEEN));
+wait (7000);
+store.dispatch(fetch(GLASGOW));
 
