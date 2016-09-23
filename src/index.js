@@ -22,33 +22,6 @@ var delay = ( function() {
 })();  
 
 
-delay(function(){
-    
-ReactDOM.render(
-  <Provider store={store}>
-    <Weather />
-  </Provider>
-, root);
-
-store.dispatch(fetch("Glasgow"));
-alert('Glasgow is being displayed');    
-    
-}, 60000 ); // end delay
-
-   
-delay(function(){
-    
-ReactDOM.render(
-  <Provider store={store}>
-    <Weather />
-  </Provider>
-, root);
-
-store.dispatch(fetch("Aberdeen"));
-alert('Aberdeen is being displayed');    
-    
-}, 60000 ); // end delay 
-
 
 delay(function(){
     
