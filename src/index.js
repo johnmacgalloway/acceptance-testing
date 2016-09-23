@@ -13,6 +13,17 @@ const GLASGOW = 'Glasgow';
 const store = createStore()
     , root = document.getElementById('root');
     
+var delay = ( function() {
+    var timer = 0;
+    return function(callback, ms) {
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+    };
+})();  
+
+
+delay(function(){
+    
 ReactDOM.render(
   <Provider store={store}>
     <Weather />
@@ -20,7 +31,12 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch(GLASGOW));
-alert('Glasgow displayed');
+alert('Glasgow being displayed');    
+    
+}, 600 ); // end delay
+
+    
+
 
 
 
