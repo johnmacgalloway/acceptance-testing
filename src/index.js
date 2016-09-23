@@ -31,7 +31,7 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch(CITY));
-alert(CITY 'being displayed');    
+alert('CITY being displayed');    
     
 }, 600 ); // end delay
 
