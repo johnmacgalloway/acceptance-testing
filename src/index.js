@@ -20,6 +20,9 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch(ABERDEEN));
-wait (7000);
+
+
+
+
 store.dispatch(fetch(GLASGOW));
 
