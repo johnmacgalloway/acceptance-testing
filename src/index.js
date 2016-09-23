@@ -8,8 +8,6 @@ import createStore from './store';
 
 const CITY ="Edinburgh";
 
-
-
 const store = createStore()
     , root = document.getElementById('root');
     
@@ -20,8 +18,6 @@ var delay = ( function() {
         timer = setTimeout(callback, ms);
     };
 })();  
-
-
 
 delay(function(){
     
@@ -34,7 +30,7 @@ ReactDOM.render(
 store.dispatch(fetch("Perth"));
 alert('Perth is being displayed');    
     
-}, 600 ); // end delay 
+}, 100 ); // end delay 
 
 
 
