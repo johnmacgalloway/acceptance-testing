@@ -13,7 +13,7 @@ const CITY ="Edinburgh";
 const store = createStore()
     , root = document.getElementById('root');
     
-var delay = ( function(CITY) {
+var delay = ( function() {
     var timer = 0;
     return function(callback, ms) {
         clearTimeout (timer);
@@ -22,7 +22,7 @@ var delay = ( function(CITY) {
 })();  
 
 
-delay(function(CITY){
+delay(function(){
     
 ReactDOM.render(
   <Provider store={store}>
