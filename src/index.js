@@ -35,8 +35,19 @@ alert('Edinburgh is being displayed');
     
 }, 600 ); // end delay
 
+   
+delay(function(){
     
-CITY = "Aberdeen";
+ReactDOM.render(
+  <Provider store={store}>
+    <Weather />
+  </Provider>
+, root);
+
+store.dispatch(fetch("Aberdeen"));
+alert('Aberdeen is being displayed');    
+    
+}, 600 ); // end delay 
 
 
 
