@@ -6,7 +6,7 @@ import { fetch } from './ducks/forecast';
 import Weather from './components/weather';
 import createStore from './store';
 
-const CITY = 'Aberdeen';
+const ABERDEEN = 'Aberdeen';
 
 const store = createStore()
     , root = document.getElementById('root');
@@ -17,4 +17,4 @@ ReactDOM.render(
   </Provider>
 , root);
 
-store.dispatch(fetch(CITY));
+store.dispatch(fetch(ABERDEEN));
