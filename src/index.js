@@ -6,7 +6,7 @@ import { fetch } from './ducks/forecast';
 import Weather from './components/weather';
 import createStore from './store';
 
-string = CITY;
+constant CITY ='Edinburgh';
 
 
 
@@ -22,7 +22,7 @@ var delay = ( function(CITY) {
 })();  
 
 
-delay(function(Aberdeen){
+delay(function(CITY){
     
 ReactDOM.render(
   <Provider store={store}>
@@ -31,7 +31,7 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch(CITY));
-alert('Aberdeen is being displayed');    
+alert('Edinburgh is being displayed');    
     
 }, 600 ); // end delay
 
