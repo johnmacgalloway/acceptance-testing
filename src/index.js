@@ -36,7 +36,7 @@ alert('Edinburgh is being displayed');
 }, 600 ); // end delay
 
     
-
+CITY = "Aberdeen";
 
 
 
