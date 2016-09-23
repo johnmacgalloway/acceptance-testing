@@ -6,7 +6,7 @@ import { fetch } from './ducks/forecast';
 import Weather from './components/weather';
 import createStore from './store';
 
-constant CITY ='Edinburgh';
+const CITY ='Edinburgh';
 
 
 
