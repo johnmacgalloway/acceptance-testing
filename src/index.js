@@ -19,10 +19,18 @@ ReactDOM.render(
   </Provider>
 , root);
 
-store.dispatch(fetch(ABERDEEN));
+function myLoop(i) {
+  return Promise.delay(1000)
+    .then(function() {
+      if (i > 0) {
+        store.dispatch(fetch(GLASGOW));
+        alert('Glasgow displayed');
+        return myLoop(i-=1);
+      }
+    });
+}
+
+myLoop(3);
 
 
-
-
-store.dispatch(fetch(GLASGOW));
 
