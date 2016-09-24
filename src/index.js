@@ -67,7 +67,7 @@ flow (1);
 //store.dispatch(fetch("Edinburgh"));
 //alert('Edinburgh is being displayed'); 
     
-}, 7 ); // end delay 
+//}, 7 ); // end delay 
 
 
 
@@ -94,7 +94,8 @@ ReactDOM.render(
 //store.dispatch(fetch("Edinburgh"));
 //alert('Edinburgh is being displayed');    
     
-//}, 7 ); // end delay 
+    
+}, 7 ); // end delay 
 
 var gladelay = ( function() {
     var timer = 0;
