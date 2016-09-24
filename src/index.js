@@ -29,6 +29,7 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch("Perth"));
+alert('Perth displayed');
    
     
 }, 7000 ); // end delay 
