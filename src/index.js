@@ -11,7 +11,7 @@ const CITY ="Edinburgh";
 const store = createStore()
     , root = document.getElementById('root');
     
-var delay = ( function() {
+var Perthdelay = ( function() {
     var timer = 0;
     return function(callback, ms) {
         clearTimeout (timer);
@@ -19,7 +19,7 @@ var delay = ( function() {
     };
 })();  
 
-delay(function(){
+Perthdelay(function(){
     
 ReactDOM.render(
   <Provider store={store}>
@@ -29,6 +29,27 @@ ReactDOM.render(
 
 store.dispatch(fetch("Perth"));
 alert('Perth is being displayed');    
+    
+}, 100 ); // end delay 
+
+var Edidelay = ( function() {
+    var timer = 0;
+    return function(callback, ms) {
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+    };
+})();  
+
+Edidelay(function(){
+    
+ReactDOM.render(
+  <Provider store={store}>
+    <Weather />
+  </Provider>
+, root);
+
+store.dispatch(fetch("Edinburgh"));
+alert('Edinburgh is being displayed');    
     
 }, 100 ); // end delay 
 
