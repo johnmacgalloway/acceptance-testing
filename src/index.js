@@ -18,7 +18,7 @@ var perthdelay = ( function() {
         timer = setTimeout(callback, ms);
     };
 })();  
-alert('Perth is being displayed'); 
+//alert('Perth is being displayed'); 
 
 perthdelay(function(){
     
@@ -51,9 +51,9 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch("Edinburgh"));
-alert('Edinburgh is being displayed');    
+//alert('Edinburgh is being displayed');    
     
-}, 70000 ); // end delay 
+}, 7000 ); // end delay 
 
 var gladelay = ( function() {
     var timer = 0;
@@ -72,7 +72,7 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch("Glasgow"));
-alert('Glasgow is being displayed');    
+//alert('Glasgow is being displayed');    
     
 }, 7000 ); // end delay 
 
