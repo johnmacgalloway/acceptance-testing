@@ -30,6 +30,13 @@ ReactDOM.render(
   </Provider>
 , root);
 
+i = 2;
+flow(i);
+i = 1;
+flow(i);
+i = 0;
+flow(i);
+
 function sleep(dur) {t=setTimeout("flow()",dur);} //starts flow control again after dur
 
 function flow() {
@@ -62,12 +69,7 @@ function flow() {
     		break;
     }
 }
-i = 0;
-flow(i);
-i = 1;
-flow(i);
-i = 2;
-flow(i);
+
 
 //alert(' Perth toggled');
 //store.dispatch(fetch("Edinburgh"));
