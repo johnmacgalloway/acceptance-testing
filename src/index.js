@@ -30,12 +30,23 @@ ReactDOM.render(
   </Provider>
 , root);
 
-i = 2;
-flow(i);
-i = 1;
-flow(i);
-i = 0;
-flow(i);
+var counter = 0;
+
+function do_testing(){
+    if(counter > 10)
+    {
+        return false;
+    }
+    /// do testing
+    flow(i);
+    /* in the last callback add this:
+    counter++;
+    do_huge_nested_craziness(); //recursion
+    */
+    flow++;
+    counter++;
+}
+
 
 function sleep(dur) {t=setTimeout("flow()",dur);} //starts flow control again after dur
 
