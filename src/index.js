@@ -42,19 +42,18 @@ function flow() {
     		sleep(1000);
     		break;
     	case 1:
-    		run(i);
     		alert(' Perth about to toggle');
             store.dispatch(toggle("Perth"));
     		sleep(2000);
     		break;
     	case 2:
-    		run(i);
-    		store.dispatch(fetch(Edinburgh));
+    		store.dispatch(fetch("Edinburgh"));
     		alert( 'Edinburgh displayed')
     		clearTimeout(t); //stops flow
     		break;
     	default:
-    		run(i);
+    		alert('Default - Aberdeen')
+    		store.dispatch(fetch("Aberdeen"))
     		sleep(3000);
     		break;
     }
