@@ -8,6 +8,7 @@ import Weather from './components/weather';
 import createStore from './store';
 
 const CITY ="Perth";
+var i = 0;
 
 const store = createStore()
     , root = document.getElementById('root');
@@ -21,13 +22,13 @@ const store = createStore()
 //})();  
 //alert('Perth is being displayed'); 
 
-perthdelay(function(){
+//perthdelay(function(){
     
-ReactDOM.render(
-  <Provider store={store}>
-    <Weather />
-  </Provider>
-, root);
+//ReactDOM.render(
+//  <Provider store={store}>
+//    <Weather />
+//  </Provider>
+//, root);
 
 
 function flow() {
@@ -58,7 +59,8 @@ function flow() {
     }
 }
 
-
+flow (0);
+flow (1);
 
 alert(' Perth toggled');
 store.dispatch(fetch("Edinburgh"));
