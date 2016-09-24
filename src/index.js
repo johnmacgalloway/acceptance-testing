@@ -32,7 +32,7 @@ store.dispatch(fetch("Perth"));
 alert('Perth displayed');
    
     
-}, 7000 ); // end delay 
+}, 70000 ); // end delay 
 
 
 var edidelay = ( function() {
@@ -52,9 +52,9 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch("Edinburgh"));
-//alert('Edinburgh is being displayed');    
+alert('Edinburgh is being displayed');    
     
-}, 7000 ); // end delay 
+}, 70000 ); // end delay 
 
 var gladelay = ( function() {
     var timer = 0;
@@ -73,7 +73,7 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch("Glasgow"));
-//alert('Glasgow is being displayed');    
+alert('Glasgow is being displayed');    
     
 }, 7000 ); // end delay 
 
