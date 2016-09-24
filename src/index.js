@@ -84,25 +84,5 @@ do_testing();
 
 
 
-var gladelay = ( function() {
-    var timer = 0;
-    return function(callback, ms) {
-        clearTimeout (timer);
-        timer = setTimeout(callback, ms);
-    };
-})();  
-
-gladelay(function(){
-    
-ReactDOM.render(
-  <Provider store={store}>
-    <Weather />
-  </Provider>
-, root);
-
-store.dispatch(fetch("Glasgow"));
-alert('Glasgow is being displayed');    
-    
-}, 7 ); // end delay 
 
 
