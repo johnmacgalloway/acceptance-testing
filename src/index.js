@@ -7,22 +7,10 @@ import {toggle} from './ducks/forecast';
 import Weather from './components/weather';
 import createStore from './store';
 
-const CITY ="Perth";
 var i = 0;
 
 const store = createStore()
     , root = document.getElementById('root');
-    
-//var perthdelay = ( function() {
-//    var timer = 0;
-//    return function(callback, ms) {
-//        clearTimeout (timer);
-//        timer = setTimeout(callback, ms);
-//    };
-//})();  
-//alert('Perth is being displayed'); 
-
-//perthdelay(function(){
     
 ReactDOM.render(
   <Provider store={store}>
@@ -56,22 +44,22 @@ function flow() {
     	case 0:
     		store.dispatch(fetch("Perth"));
             alert('Perth to be displayed');
-    		sleep(1000);
+    		//sleep(1000);
     		break;
     	case 1:
     		alert(' Perth about to toggle');
             store.dispatch(toggle("Perth"));
-    		sleep(2000);
+    		//sleep(2000);
     		break;
     	case 2:
     		store.dispatch(fetch("Edinburgh"));
     		alert( 'Edinburgh displayed')
-    		sleep(1000);
+    		//sleep(1000);
     		break;
     	default:
     		alert('Default - Aberdeen')
     		store.dispatch(fetch("Aberdeen"))
-    		sleep(3000);
+    		//sleep(3000);
     		break;
     }
 }
