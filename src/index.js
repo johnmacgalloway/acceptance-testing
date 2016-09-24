@@ -53,7 +53,7 @@ ReactDOM.render(
 store.dispatch(fetch("Edinburgh"));
 alert('Edinburgh is being displayed');    
     
-}, 7000 ); // end delay 
+}, 70000 ); // end delay 
 
 var gladelay = ( function() {
     var timer = 0;
