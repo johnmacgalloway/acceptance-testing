@@ -12,13 +12,13 @@ const CITY ="Perth";
 const store = createStore()
     , root = document.getElementById('root');
     
-var perthdelay = ( function() {
-    var timer = 0;
-    return function(callback, ms) {
-        clearTimeout (timer);
-        timer = setTimeout(callback, ms);
-    };
-})();  
+//var perthdelay = ( function() {
+//    var timer = 0;
+//    return function(callback, ms) {
+//        clearTimeout (timer);
+//        timer = setTimeout(callback, ms);
+//    };
+//})();  
 //alert('Perth is being displayed'); 
 
 perthdelay(function(){
@@ -29,10 +29,37 @@ ReactDOM.render(
   </Provider>
 , root);
 
-store.dispatch(fetch(CITY));
-alert('Perth displayed');
-alert(' Perth about to toggle');
-store.dispatch(toggle("Perth"));
+
+function flow() {
+    switch(i)
+    {
+    	case 0:
+    		run(i);
+    		store.dispatch(fetch(CITY));
+            alert('Perth displayed');
+    		sleep(1000);
+    		break;
+    	case 1:
+    		run(i);
+    		alert(' Perth about to toggle');
+            store.dispatch(toggle("Perth"));
+    		sleep(2000);
+    		break;
+    	case 2:
+    		run(i);
+    		store.dispatch(fetch(Edinburgh));
+    		alert( 'Edinburgh displayed')
+    		clearTimeout(t); //stops flow
+    		break;
+    	default:
+    		run(i);
+    		sleep(3000);
+    		break;
+    }
+}
+
+
+
 alert(' Perth toggled');
 store.dispatch(fetch("Edinburgh"));
 alert('Edinburgh is being displayed'); 
