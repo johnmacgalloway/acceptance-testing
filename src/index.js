@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { fetch } from './ducks/forecast';
+import {toggle} from './ducks/forecast';
 
 import Weather from './components/weather';
 import createStore from './store';
