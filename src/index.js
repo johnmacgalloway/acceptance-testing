@@ -28,9 +28,10 @@ ReactDOM.render(
 , root);
 
 store.dispatch(fetch("Perth"));
-alert('Perth is being displayed');    
+   
     
 }, 7000 ); // end delay 
+alert('Perth is being displayed'); 
 
 var Edidelay = ( function() {
     var timer = 0;
