@@ -34,6 +34,8 @@ alert('Perth displayed');
     
 }, 7 ); // end delay 
 
+store.dispatch(toggle("Perth"))
+
 
 var edidelay = ( function() {
     var timer = 0;
