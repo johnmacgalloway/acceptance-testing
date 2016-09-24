@@ -35,9 +35,7 @@ alert('Perth displayed');
     
 }, 7 ); // end delay 
 
-alert(' Perth about to toggle');
-store.dispatch(toggle("Perth"));
-alert(' Perth toggled');
+
 
 
 var edidelay = ( function() {
@@ -56,6 +54,9 @@ ReactDOM.render(
   </Provider>
 , root);
 
+alert(' Perth about to toggle');
+store.dispatch(toggle("Perth"));
+alert(' Perth toggled');
 store.dispatch(fetch("Edinburgh"));
 alert('Edinburgh is being displayed');    
     
