@@ -63,11 +63,11 @@ function flow() {
     }
 }
 i = 0;
-switch (i);
+switch(i);
 i = 1;
-switch (i);
+switch(i);
 i = 2;
-switch (i);
+switch(i);
 
 //alert(' Perth toggled');
 //store.dispatch(fetch("Edinburgh"));
