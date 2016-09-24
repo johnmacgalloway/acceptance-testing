@@ -35,6 +35,7 @@ alert('Perth displayed');
 }, 7 ); // end delay 
 
 store.dispatch(toggle("Perth"))
+alert(' Perth toggled')
 
 
 var edidelay = ( function() {
