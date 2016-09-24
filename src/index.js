@@ -19,7 +19,7 @@ var perthdelay = ( function() {
     };
 })();  
 //alert('Perth is being displayed'); 
-stire.dispatch(fetch("Perth"));
+store.dispatch(fetch("Perth"));
 
 perthdelay(function(){
     
