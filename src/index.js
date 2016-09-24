@@ -37,7 +37,7 @@ function flow() {
     {
     	case 0:
     		store.dispatch(fetch("Perth"));
-            alert('Perth displayed');
+            alert('Perth to be displayed');
     		sleep(1000);
     		break;
     	case 1:
@@ -63,7 +63,8 @@ function flow() {
     }
 }
 
-flow (1);
+flow (switch = 0);
+flow (switch = 2);
 
 //alert(' Perth toggled');
 //store.dispatch(fetch("Edinburgh"));
