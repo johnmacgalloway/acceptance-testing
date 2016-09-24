@@ -63,9 +63,9 @@ function flow() {
 flow (0);
 flow (1);
 
-alert(' Perth toggled');
-store.dispatch(fetch("Edinburgh"));
-alert('Edinburgh is being displayed'); 
+//alert(' Perth toggled');
+//store.dispatch(fetch("Edinburgh"));
+//alert('Edinburgh is being displayed'); 
     
 }, 7 ); // end delay 
 
