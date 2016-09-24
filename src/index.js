@@ -55,14 +55,9 @@ function flow() {
     	case 2:
     		store.dispatch(fetch("Edinburgh"));
     		alert( 'Edinburgh displayed')
-    		//clearTimeout(t); //stops flow
+    		sleep(1000);
     		break;
     	default:
-    	 ReactDOM.render(
-    <Provider store={store}>
-    <Weather />
-  </Provider>
-, root);
     		alert('Default - Aberdeen')
     		store.dispatch(fetch("Aberdeen"))
     		sleep(3000);
