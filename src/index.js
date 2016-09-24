@@ -31,7 +31,7 @@ function do_testing(){
     counter++;
     do_huge_nested_craziness(); //recursion
     */
-    flow++;
+    i++;
     counter++;
 }
 
