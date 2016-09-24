@@ -36,7 +36,6 @@ function flow() {
     switch(i)
     {
     	case 0:
-    		run(i);
     		store.dispatch(fetch(CITY));
             alert('Perth displayed');
     		sleep(1000);
