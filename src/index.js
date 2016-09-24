@@ -30,6 +30,7 @@ const store = createStore()
 //  </Provider>
 //, root);
 
+function sleep(dur) {t=setTimeout("flow()",dur);} //starts flow control again after dur
 
 function flow() {
     switch(i)
