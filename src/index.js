@@ -31,7 +31,11 @@ ReactDOM.render(
 
 store.dispatch(fetch(CITY));
 alert('Perth displayed');
-
+alert(' Perth about to toggle');
+store.dispatch(toggle("Perth"));
+alert(' Perth toggled');
+store.dispatch(fetch("Edinburgh"));
+alert('Edinburgh is being displayed'); 
     
 }, 7 ); // end delay 
 
@@ -54,11 +58,11 @@ ReactDOM.render(
   </Provider>
 , root);
 
-alert(' Perth about to toggle');
-store.dispatch(toggle("Perth"));
-alert(' Perth toggled');
-store.dispatch(fetch("Edinburgh"));
-alert('Edinburgh is being displayed');    
+//alert(' Perth about to toggle');
+//store.dispatch(toggle("Perth"));
+//alert(' Perth toggled');
+//store.dispatch(fetch("Edinburgh"));
+//alert('Edinburgh is being displayed');    
     
 }, 7 ); // end delay 
 
