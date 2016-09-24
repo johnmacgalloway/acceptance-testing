@@ -49,9 +49,14 @@ function flow() {
     	case 2:
     		store.dispatch(fetch("Edinburgh"));
     		alert( 'Edinburgh displayed')
-    		clearTimeout(t); //stops flow
+    		//clearTimeout(t); //stops flow
     		break;
     	default:
+    	 ReactDOM.render(
+    <Provider store={store}>
+    <Weather />
+  </Provider>
+, root);
     		alert('Default - Aberdeen')
     		store.dispatch(fetch("Aberdeen"))
     		sleep(3000);
@@ -59,8 +64,7 @@ function flow() {
     }
 }
 
-flow (0);
-flow (1);
+flow ();
 
 //alert(' Perth toggled');
 //store.dispatch(fetch("Edinburgh"));
@@ -71,30 +75,7 @@ flow (1);
 
 
 
-var edidelay = ( function() {
-    var timer = 0;
-    return function(callback, ms) {
-        clearTimeout (timer);
-        timer = setTimeout(callback, ms);
-    };
-})();  
 
-edidelay(function(){
-    
-ReactDOM.render(
-  <Provider store={store}>
-    <Weather />
-  </Provider>
-, root);
-
-//alert(' Perth about to toggle');
-//store.dispatch(toggle("Perth"));
-//alert(' Perth toggled');
-//store.dispatch(fetch("Edinburgh"));
-//alert('Edinburgh is being displayed');    
-    
-    
-}, 7 ); // end delay 
 
 var gladelay = ( function() {
     var timer = 0;
