@@ -19,7 +19,6 @@ var perthdelay = ( function() {
     };
 })();  
 //alert('Perth is being displayed'); 
-store.dispatch(fetch("Perth"));
 
 perthdelay(function(){
     
@@ -29,7 +28,7 @@ ReactDOM.render(
   </Provider>
 , root);
 
-//store.dispatch(fetch("Perth"));
+store.dispatch(fetch("Perth"));
    
     
 }, 7000 ); // end delay 
