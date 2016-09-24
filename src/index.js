@@ -30,8 +30,7 @@ ReactDOM.render(
 
 store.dispatch(fetch("Perth"));
 alert('Perth displayed');
-store.dispatch(toggle("Perth"))
-alert(' Perth toggled')  
+
     
 }, 7 ); // end delay 
 
