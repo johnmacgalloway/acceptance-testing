@@ -24,11 +24,11 @@ const store = createStore()
 
 //perthdelay(function(){
     
-//ReactDOM.render(
-//  <Provider store={store}>
-//    <Weather />
-//  </Provider>
-//, root);
+ReactDOM.render(
+  <Provider store={store}>
+    <Weather />
+  </Provider>
+, root);
 
 function sleep(dur) {t=setTimeout("flow()",dur);} //starts flow control again after dur
 
@@ -36,7 +36,7 @@ function flow() {
     switch(i)
     {
     	case 0:
-    		store.dispatch(fetch(CITY));
+    		store.dispatch(fetch("Perth"));
             alert('Perth displayed');
     		sleep(1000);
     		break;
