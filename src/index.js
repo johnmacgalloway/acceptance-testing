@@ -77,11 +77,7 @@ function flow() {
 }
 
 
-//alert(' Perth toggled');
-//store.dispatch(fetch("Edinburgh"));
-//alert('Edinburgh is being displayed'); 
-    
-//}, 7 ); // end delay 
+do_testing();
 
 
 
